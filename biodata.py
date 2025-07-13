@@ -1,0 +1,7 @@
+print("biodata")
+name=input("enter your name :")
+age=int(input("enter your age:"))
+location =input ("enter your location:")
+print(name)
+print(age)
+print(location)
