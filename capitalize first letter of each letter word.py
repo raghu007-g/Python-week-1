@@ -1,0 +1,5 @@
+print("capitalize first letter of each word")
+word = str(input("Enter a string: "))
+print("Original string:", word)
+capitalized_word = ' '.join(w.capitalize() for w in word.split())
+print("String with first letter of each word capitalized:", capitalized_word)
