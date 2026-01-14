@@ -1,0 +1,440 @@
+
+        #square pattern
+
+'''n=int(input('Enter rows numbers :'))
+for rows in range(1,n+1):
+    for cols in range(1,n+1):
+        print('*',end=' ')
+    print()'''
+    
+        #right angle triangle pattern
+    
+'''n=int(input('Enter rows numbers :'))
+for rows in range(1,n+1):
+    for cols in range(1,rows+1):
+        print('*',end=' ')
+    print()'''
+    
+    
+    #inverted right angle triangle pattern
+'''n=int(input('Enter rows numbers :'))
+for rows in range(n,0,-1):
+    for cols in range(rows): # note here we also can use range(1,rows+1) and use cols in n-rows
+        print('*',end=' ')
+    print()'''
+    
+
+
+        #incresing number pattern
+'''n=int(input('Enter rows numbers :'))
+for rows in range(1,n+1):
+    for cols in range(1,rows+1):
+        print(cols,end=' ')
+    print()'''
+    
+    
+    #Half kite pattern
+    
+'''n=int(input('Enter rows numbers :'))
+for rows in range(2*n):
+        if(n<rows):
+            rows=2*n-rows
+        else:
+            rows=rows
+        for cols in range(1,rows+1):
+            print('*',end=' ')
+        
+        print()'''
+        
+
+        #opposite right angle triangle
+'''n=int(input('Enter rows number : '))
+for rows in range(1,n+1):
+    for spaces in range(n-rows):
+        print(' ',end='')
+    for cols in  range(1,rows+1):
+        print('*',end='')
+    print()'''
+        
+        #Inverted opposite right angle triangle
+'''n=int(input('Enter rows number:'))
+for rows in range(1,n+1):
+    for spaces in range(rows):
+        print(' ',end='')
+    for cols in range(n-rows+1):
+        print('*',end='')
+    print()'''
+    
+        #pyramid pattern
+'''n=int(input('Enter number of rows : '))+1
+for rows in range(n):
+    for spaces in range(2*(n-rows-1)):
+        print(' ',end='')
+    for cols in range(2*rows-1):
+        print('*',end=' ')
+    print()        '''
+    
+    
+    
+            #inverted centered pyramid Triangle
+'''n=int(input('Enter number of rows : '))+1
+for rows in range(n):
+    for spaces in range(rows+1):
+        print(end='')
+    for cols in range(2*(n-rows)-1): 
+        print('*',end='')
+    print()'''
+    
+
+        
+        #Equilateral Triangle
+        
+'''n=int(input('Enter number of rows :'))
+for rows in range(n+1):
+    for spaces in range(n-rows):
+        print(' ', end='')
+    for stars in range(rows+1):
+        print('* ',end='')
+    print()'''
+    
+    
+            #Hour glass pattern
+'''n=int(input('Enter number of rows :'))
+for rows in range(n,0,-1):
+    for spaces in range(n-rows):
+        print(' ',end='')
+    for stars in range(rows):
+        print('* ',end='')
+    print()
+for lowerpart in range(1,n+1):
+    for spaces in range(n-lowerpart):
+        print(' ',end='')
+    for lowerstars in range(lowerpart):
+        print('* ',end='')
+    print()'''
+    
+    
+    
+            # hollow pyraimid
+'''n=int(input('Enter number of rows : '))
+for rows in range(1,n+1):
+    for spaces in range((n-rows)):
+        print(' ',end='')
+    for cols in range(2*rows-1):
+        if(rows==1 or rows==n or cols==0 or cols==2*rows-2):
+            print('*',end='')
+        else:
+            print(end=' ')
+    print()'''
+    
+    
+    
+        #inverted hollow pyramid 
+'''n=int(input('Enter number of rows : '))
+for rows in range(n,0,-1):
+    for spaces in range((n-rows)):
+        print(' ',end='')
+    for cols in range(2*rows-1):
+        if(rows==1 or rows==n or cols==0 or cols==2*rows-2):
+            print('*',end='')
+        else:
+            print(end=' ')
+    print()'''
+    
+    
+            #hollow kite pattern
+'''n=int(input('Enter numbers of rows :'))
+for rows in range(1,2*n):
+    if(rows<=n):
+        curr=rows
+    else:
+        curr=2*n-rows
+    for spaces in range(n-curr):
+        print(' ',end='')
+    for cols in range(2*curr-1):
+        if(curr==1  or cols==0 or cols==2*curr-2):
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print()
+        '''
+        
+        
+        #Pascal triangle pattern
+'''import math
+n=int(input('Enter number of rows : '))
+for rows in range(n+1):
+    for spaces in range(n-rows):
+        print(' ',end='')
+    for cols in range(rows+1):
+        print(math.factorial(rows)//(math.factorial(cols)*math.factorial(rows-cols)),end=' ')
+    print()'''
+    
+    
+    
+
+
+'''            # centered palindrome diamond pattern
+n=int(input('Enter number of rows :'))
+for rowshelp in range(2*n-1):
+    if(n>rowshelp):
+        rows=rowshelp+1
+    else:
+        rows=2*n-rowshelp-1
+    print(' '*(n-rows),end='')
+    for upperpart in range(rows,0,-1):
+        print(upperpart,end='')
+    for lowerpart in range(2,rows+1):
+        print(lowerpart,end='')
+    print()'''
+    
+    
+    
+'''  #rectangle in inside diamond hollow inside 
+n=int(input('Enter number of rows :'))
+for rows in range(2*n+1):
+    for cols in range(n-rows):
+        print('*',end='')'''
+        
+
+
+'''
+        # floyed's triangle
+n=int(input('Enter number of rows :'))
+count=1
+for rows in range(1,n+1):
+    for cols in range(rows):
+        print(count,end=' ')
+        count+=1
+    print()'''
+
+
+'''
+            # binary number pattern
+n=int(input('Enter number of rows :'))
+for rows in range(1,n+1):
+    for cols in range(1,rows+1):
+        if((rows+cols)%2==0):
+            print('1',end=' ')
+        else:
+            print('0',end=' ')
+    print()'''
+    
+    
+    
+'''    #rectangle contains hollow diamond inside
+n=int(input('Enter number of rows :'))
+mid=n//2
+for rows in range(1,n+1):
+    if(rows==1 or rows==n):
+        print('*'*n)
+    else:
+        if(rows<=mid):
+            leftside=mid-rows+1
+            spaces=2*rows-2
+        else:
+            leftside=rows-mid
+            spaces=2*(n-rows)
+        print('*'*leftside+' '*spaces+'*'*leftside)'''
+        
+        
+'''        #butter fly pattern 
+n=int(input('Enter number of rows :'))
+for rows in range(1,n+1):
+    stars=rows
+    if(stars==n):
+        break
+    spaces=2*(n-rows)
+    print('*'*stars+' '*spaces+'*'*stars)
+for cols in range(n,0,-1):
+    stars=cols
+    spaces=2*(n-cols)
+    print('*'*cols+' '*spaces+'*'*cols)
+print()
+        '''
+        
+        # gas cylinder pattern.
+'''n=int(input('enter number of rows :'))
+for rows in range(n+1):
+        for col in range(n+1):
+            if(rows==0 or rows==n or col==0 or col==n):
+                print('*',end='')
+            else:
+                print(' ',end='')
+        print()'''
+        
+'''          #hollow butter fly pattern   
+n=int(input('Enter number of rows :'))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        if(j==1 or j==i):
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print(' '*(2*(n-i)),end='')
+    
+    for j in range(1,i+1):
+        if(j==1 or j==i):
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print()
+    
+for i in range(n,0,-1):
+    for j in range(1,n+1):
+        if(j==1 or j==i):
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print(' '*(2*(n-i)),end='')
+    for j in range(1,i+1):
+        if(j==1 or j==i):
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print()
+'''
+
+
+
+'''
+                #moutain pattern
+
+n=int(input('Enter number of rows :'))
+for rows in range(1,n+1):
+    for cols in range(1,4*n):
+        if(cols==n-rows+1 or cols==n+rows-1 or cols==3*n-rows+1 or cols==3*n+rows-1):
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print()   ''' 
+    
+    
+    
+                    #slant cylinder 
+'''n=int(input('enter number of rows :'))
+for rows in range(n+1):
+    for spaces in range(n-rows):
+        print(' ',end='')
+    for col in range(n+1):
+        if(rows==0 or rows==n or col==0 or col==n):
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print()        '''
+    
+    
+    
+    
+    
+'''            #palindrome number pattern
+n=int(input('Enter number of rows : '))
+for rows in range(1,n+1):
+    for spaces in range(n-rows):
+        print(' ',end='')
+    for leftside in range(rows,1,-1):
+        print(leftside,end='')
+    for rightside in range(1,rows+1):
+        print(rightside,end='')
+    print()'''
+    
+    
+    
+'''        #number==rows pattern
+n=int(input('Enter number of rows :'))
+for rows in range(n,0,-1):
+    for cols in range(1,rows+1):
+        print(n-rows+1,end=' ')
+    print()
+        '''
+        
+
+'''            #diamond pattern
+n=int(input('Enter number of rows :'))
+for rows in range(1,n+1):
+    spaces=' '*(n-rows)
+    stars='* '*rows
+    print(spaces+stars) 
+for rows in range(n-1,0,-1):
+    spaces=' '*(n-rows)
+    stars='* '*rows
+    print(spaces+stars) 
+print()'''
+        
+        
+'''            # trapizium pattern
+            
+n=int(input('Enter number of rows : '))
+left=1
+right=n*(n+1)
+for rows in range(n,0,-1):
+    print(' '*(n-rows),end='')
+    
+    for cols in range(rows):
+        print(f'{left}',end=' ')
+        left+=1
+        
+    right_st=right-rows+1
+    for cols in range(rows):
+        print(f'  {right_st}',end='')
+        right_st+=1
+    
+    right-=rows
+    print()''' 
+    
+    
+'''    #square layer pattern 
+n=int(input('Enter number of rows :'))
+size=2*n-1
+for rows in range(size):
+    for cols in range(size):
+        top=rows
+        left=cols
+        bottom=(size-1)-rows
+        right=(size-1)-cols
+        minimum=n-min(top,left,bottom,right)
+        print(minimum,end=' ')
+    print()'''
+    
+    
+'''#reverse alphabet
+n=int(input('Enter number of rows :'))
+for rows in range(1,n+1):
+    str_char=ord('A')+n-rows
+    for cols in range(rows):
+        print(chr(str_char+cols),end=' ')
+    print()   '''    
+        
+        
+        #Flyod"s triangle
+'''n=int(input('Enter number of rows :'))
+count=0
+for rows in range(1,n+1):
+    for cols in range(rows):
+        let=chr(97+count)
+        if(count%2==0):
+            print(let,end=' ')
+        else:
+            print(chr(ord(let)-32),end=' ')
+        count+=1
+    print()'''
+            # reverse alphabet
+'''n=int(input('Enter number of rows :'))
+for rows in range(n,0,-1):
+    for cols in range(rows,0,-1):
+        print(chr(64+cols),end=' ')
+    print()'''
+
+
+
+            #number bridges
+            
+'''n=int(input('Enter number of rows :'))
+for rows in range(1,n+1):
+    for cols in range(1,rows+1):
+        print(cols,end='')
+    tot_spaces=2*(n-rows)
+    print(' '*tot_spaces,end='')
+    for cols in range(rows,0,-1):
+        print(cols,end='')
+    print()'''
